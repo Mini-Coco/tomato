@@ -1,0 +1,74 @@
+<style type="text/css">
+	div.input-group{
+		margin: 10px 0;
+	}
+	div.input-group-addon{
+		color: #fff;
+		background-color: #5cb85c;
+		cursor: pointer;
+	}
+	ul.movie{
+		margin: 0 auto;
+		padding: 0;
+	}
+	ul.movie li{
+		list-style: none;
+		display: inline-block;
+		width: 100%;
+		border-top: 1px dashed #167f39;
+	}
+	ul.movie div{
+		float: left;
+	}
+	.introduce{
+		padding-left: 20px;
+	}
+	.score{
+		font-size: 26px;
+		color: #f00;
+	}
+</style>
+	
+<section class="row">
+	<div class="col-lg-2 col-md-1 hidden-sm hidden-xs"></div>
+	<div class="col-lg-8 col-md-10 col-xs-12">
+		<h3 class="title">视频榜单TOP20</h3>
+		<div class="input-group">
+			<input type="text" class="form-control" ng-model="key" 
+				placeholder="请输入关键字" />
+			<div class="input-group-addon">搜索</div>
+		</div>
+		<ul class="movie">
+			<li ng-repeat="v in arr | filter:key | orderBy:'-rating.average'">
+				<div>
+					<img ng-src="{{v.images.medium}}" />
+				</div>
+				<div class="introduce">
+					<h4>
+						{{v.title}} -- {{v.original_title}}
+						<i>({{v.year}})</i>
+						<b class="score">{{v.rating.average}}</b>
+					</h4>
+					<h5>
+						导演：
+						<span ng-repeat="dire in v.directors">
+							{{dire.name}}
+						</span>
+						<br />
+						主演：
+						<span ng-repeat="actor in v.casts">
+							{{actor.name}} / 
+						</span>
+					</h5>
+					<h5>
+						关键字：
+						<span ng-repeat="key in v.genres">
+							{{key}} 
+						</span>
+					</h5>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="col-lg-2 col-md-1 hidden-sm hidden-xs"></div>
+</section>

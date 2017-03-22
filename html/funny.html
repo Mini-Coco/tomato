@@ -1,0 +1,64 @@
+<style type="text/css">
+	textarea{
+		margin-top: 5px;
+		width: 100%;
+		height: 150px;
+	}
+	.right{
+		float: right;
+	}
+	.mr-10{
+		margin: 10px 8px 0 0;
+	}
+	.frame{
+		border: 1px dotted #f00;
+	}
+</style>
+<section class="row">
+	<article class="col-xs-12">
+		<div class="col-xs-12" align="center">
+			<div class="col-lg-2 col-xs-1"></div>
+			<h3 class="col-lg-8 col-xs-10 title">
+				生活是那么的平淡无奇， 但是生活有时那么的充满乐趣，
+				一件平淡的事物背后总是充满的不一般的精彩，
+				就像是一块石头、一盏路灯、一个烟囱，一切的东西看起来都是那么的普通。但是……
+			</h3>
+			<div class="col-lg-2 col-xs-1"></div>
+			<div class="col-md-6 col-xs-12">
+				<a class="image-dot">
+					<img class="img-responsive" src="img/funny-1.jpg"/>
+				</a>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<a class="image-dot">
+					<img class="img-responsive" src="img/funny-2.jpg"/>
+				</a>
+			</div>
+		</div>
+	</article>
+	<article class="col-xs-12 fixed_bg fixed_1">
+		<div class="col-lg-2 col-md-1 hidden-sm hidden-xs"></div>
+		<div style="padding-bottom: 20px;background: rgba(255,255,255,.7);" 
+			class="col-lg-8 col-md-10 col-xs-12">
+			<h3 class="title">分享你的趣事吧~</h3>
+			<input ng-model='text1' class="form-control" type="text" placeholder="请输入标题"/>
+			<textarea ng-model='text2' placeholder="请输入内容"></textarea>
+			<button ng-click="enjoy()" class="right btn btn-success">分享</button>
+		</div>
+		<div class="col-lg-2 col-md-1 hidden-sm hidden-xs"></div>
+	</article>
+	<article class="col-xs-12" ng-repeat='f in funny'>
+		<div class="col-lg-2 col-md-1 hidden-sm hidden-xs"></div>
+		<div ng-class='{frame:boo}' class="col-lg-8 col-md-10 col-xs-12">
+			<h3 contenteditable='false' ng-bind='f.title'></h3>
+			<div class="col-md-7">
+				<div contenteditable='false' ng-bind='f.content'></div>
+				<button ng-click="edit($index)" class="change mr-10 btn btn-warning">修改</button>
+				<button ng-click="del(f.id)" class="mr-10 btn btn-danger">删除</button>
+				<input ng-model="boo" type="checkbox" />喜欢
+			</div>
+			<img class="col-md-5 img-responsive img-thumbnail" ng-src='{{f.img}}' />
+		</div>
+		<div class="col-lg-2 col-md-1 hidden-sm hidden-xs"></div>
+	</article>
+</section>

@@ -1,0 +1,15 @@
+[
+	{
+		"title":"see you again",
+		"img":"img/bg-word-1.jpg",
+		"src":"src/see_you_again.mp3"
+	},{
+		"title":"i am you",
+		"img":"img/bg-word-1.jpg",
+		"src":"src/i_am_you.mp3"
+	},{
+		"title":"new soul",
+		"img":"img/bg-word-1.jpg",
+		"src":"src/new_soul.mp3"
+	}
+]

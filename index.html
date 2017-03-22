@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>番茄派</title>
+		<link rel="shortcut icon" href="img/logo.png" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/home.css" />
+	</head>
+	<body ng-app="app" ng-controller="con">
+		<div class="container-fluid">
+			<header class="row">
+				<div class="col-sm-12">
+					<nav class="navbar navbar-fixed-top header-pattern-dot">
+						<div class="navbar-header">
+							<button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a href="" style="margin-left: 20px;" ng-click='goTop()'>
+								<img title="返回顶部" width="180" src="img/logo.png" />
+							</a>
+						</div>
+						<div class="collapse navbar-collapse navbar-right" id="menu">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="#/word">文字</a>
+								</li>
+								<li>
+									<a href="" ng-click='wait()'>有声</a>
+								</li>
+								<li>
+									<a href="" ui-sref='image'>图片</a>
+								</li>
+								<li>
+									<a href="" ui-sref='music'>音乐</a>
+								</li>
+								<li>
+									<a href="" ui-sref='funny'>趣事</a>
+								</li>
+								<li>
+									<a href="" ui-sref='movie'>视频</a>
+								</li>
+								<li>
+									<a href="" ng-click='wait()'>漫画</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<!--轮播-->
+			<div class="row slideshow-wrapper">
+				<div class="gallery-slider-wrapper">
+					<div class="slider-images-wrapper">
+						<ul class="slider-main-ul">
+							<li>
+								<ul>
+									<li class="type-3">
+										<a class="article-icon">
+											<span>
+												<strong>生活就是一个七天接着一个七天</strong>
+												一辈子活下来，常常是，在最有意思的时候，没有有意思地过，在最没意思的时候，
+												想要有意思地过结果却再也过不出意思。
+												<em class="more">Read more »</em>
+											</span>
+											<img height="298" width="318" src="img/bg-word-2.jpg" alt="Please add picture">
+										</a>
+									</li>
+									<li class="type-1">
+										<a class="article-icon">
+											<span>
+												<strong>和龙猫一起</strong>
+												<em class="more">Read more »</em>
+											</span>
+											<img height="148" width="158" src="img/bg-word-1.jpg" alt="Please add picture">
+										</a>
+									</li>
+									<li class="type-1">
+										<a class="article-icon">
+											<span>
+												<strong>摄影师一定是处女座的</strong>
+												<em class="more">Read more »</em>
+											</span>
+											<img height="148" width="158" src="img/bg-word-1.jpg" alt="Please add picture">
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li class="type-1">
+										<a class="article-icon">
+											<span>
+												<strong>与世界亲拥 不向世界求告</strong>
+												<em class="more">Read more »</em>
+											</span>
+											<img height="148" width="158" src="img/bg-word-1.jpg" alt="Please add picture">
+										</a>
+									</li>
+									<li class="type-1">
+										<a class="article-icon">
+											<span>
+												<strong>如果有人向你承诺，要相信开口的一刹那是真实的</strong>
+												<em class="more">Read more »</em>
+											</span>
+											<img height="148" width="158" src="img/bg-word-1.jpg" alt="Please add picture">
+										</a>
+									</li>
+									<li class="type-2">
+										<a class="article-icon">
+											<span>
+												<strong>牛奶的日常</strong>
+												没有不可治愈的伤痛，没有不能结束的沉沦，所有失去的，会以另一种方式归来。
+												相信时光，也相信缘分。
+												<em class="more">Read more »</em>
+											</span>
+											<img height="148" width="318" src="img/fixed-1.jpg" alt="Please add picture"></a>
+									</li>
+									<li class="type-2">
+										<a class="article-icon">
+											<span>
+												<strong>新技能get√！孤单的时候如何与自己愉快地玩耍</strong>
+												恶搞身边的小物件也可以培养自己的生活情趣。
+												<em class="more">Read more »</em>
+											</span>
+											<img height="148" width="318" src="img/8.jpg" alt="Please add picture">
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li class="type-2">
+										<a class="article-icon">
+											<span>
+												<strong>被风吹过的夏天</strong>
+												你可曾想过风是什么颜色？「Colors of the Wind」（风之色彩）
+												<em class="more">Read more »</em>
+											</span>
+											<img height="148" width="318" src="img/bg.jpg" alt="Please add picture">
+										</a>
+									</li>
+									<li class="type-3">
+										<a class="article-icon">
+											<span>
+												<strong>此刻，你是不是过着自己想要的生活</strong>
+												紫霞仙子说，我的意中人是个盖世英雄，有一天他会踏着七色云彩来娶我，我猜到了开始，却想不到结局。
+												<em class="more">Read more »</em>
+											</span>
+											<img height="298" width="318" src="img/bg-word-1.jpg" alt="Please add picture">
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li class="type-3">
+										<a class="article-icon">
+											<span>
+												<strong>广告</strong>闭上眼睛 用耳朵去为心灵代开一扇窗 悠扬的音乐的里 把重要的事说给心去听
+												<em class="more">Read more »</em>
+											</span>
+											<img height="298" width="318" src="img/bg-word-1.jpg" alt="Please add picture">
+										</a>
+									</li>
+									<li class="type-1">
+										<a class="article-icon">
+											<span>
+												<strong>喵星人果然是天生萌物</strong>
+												<em class="more">Read more »</em>
+											</span>
+											<img height="148" width="158" src="img/bg-word-1.jpg" alt="Please add picture">
+										</a>
+									</li>
+									<li class="type-1">
+										<a class="article-icon">
+											<span>
+												<strong>异彩·如果我们色盲，世界可能这样</strong>
+												<em class="more">Read more »</em>
+											</span>
+											<img height="148" width="158" src="img/bg-word-1.jpg" alt="Please add picture">
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li class="type-1">
+										<a class="article-icon">
+											<span>
+												<strong>如花美眷，为谁沉香？</strong>
+												<em class="more">Read more »</em>
+											</span>
+											<img height="148" width="158" src="img/bg-word-1.jpg" alt="Please add picture">
+										</a>
+									</li>
+									<li class="type-1">
+										<a class="article-icon">
+											<span>
+												<strong>蓝色雨伞之恋</strong>
+												<em class="more">Read more »</em>
+											</span>
+											<img height="148" width="158" src="img/bg-word-1.jpg" alt="Please add picture">
+										</a>
+									</li>
+									<li class="type-2">
+										<a class="article-icon">
+											<span>
+												<strong>爸爸去哪儿-你是我写过最美的情书</strong>
+												一个我很爱的镜头。镜头一路拍摄着孩子，也记录着周围纯朴的乡间美景。所有不可追的童真美好都在那一刻定格。
+												<em class="more">Read more »</em>
+											</span>
+											<img height="148" width="318" src="img/10.jpg" alt="Please add picture">
+										</a>
+									</li>
+									<li class="type-2">
+										<a class="article-icon">
+											<span>
+												<strong>佛曰：我卖萌，我卖萌</strong>
+												画家林于思笔下的达摩似乎是顺应了时代，卸下庄重与矜持，走下神坛，染得一身屌丝气息。
+												显得几分大智若愚。
+												<em class="more">Read more »</em>
+											</span>
+											<img height="148" width="318" src="img/1.jpg" alt="Please add picture">
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li class="type-2">
+										<a class="article-icon">
+											<span>
+												<strong>梦醒了 心也碎了</strong>
+												你是我最美的梦，一直很害怕醒来，可梦终究是梦！那种刺心的痛，没有人能懂。
+												<em class="more">Read more »</em>
+											</span>
+											<img height="148" width="318" src="img/bg.jpg" alt="Please add picture">
+										</a>
+									</li>
+									<li class="type-3">
+										<a class="article-icon">
+											<span>
+												<strong>在追求、恋爱乃至婚姻中，有哪些残酷的规则或规律？</strong>
+												满满的负能量，听过很多的道理，却依然过不好这一生，爱不好一个人
+												<em class="more">Read more »</em>
+											</span>
+											<img height="298" width="318" src="img/bg-word-1.jpg" alt="Please add picture">
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="slider-bottom-controls">
+						<a href="" class="slider-scroll-left" ng-click='goLeft()'><</a>
+						<div class="slider-scroll">
+							<div class="knob"></div>
+						</div>
+						<a href="" class="slider-scroll-right" ng-click='goRight()'>></a>
+					</div>
+				</div>
+			</div>
+			<div ui-view>
+				<h3 style="height: 300px;line-height: 300px;" align="center">
+					您访问的页面不存在！
+				</h3>
+			</div>
+			<footer class="row modal-footer">
+				<div class="col-lg-6 col-xs-12">
+					<ul class="nav">
+						<li>使用帮助</li>
+						<li>版权声明</li>
+						<li>联系我们</li>
+						<li>友情链接</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-xs-12">
+					© Copyright 2011-2017 Fqpai.com All Rights Reserved.
+				</div>
+			</footer>
+		</div>
+
+		<script src="js/jquery_1.9.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular_1.5.8.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/uiRoute.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/home.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
